@@ -1,0 +1,144 @@
+:root {
+    --verde: #00e489;
+    --grigio: #505050;
+    --rosso: #ff5e5e;
+}
+
+
+/*
+colore1: contenitori
+colore2: hover
+textcolor: colore testo
+bgcolor: background
+*/
+
+body {
+    background-color: var(--bgcolor);
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: var(--colore1);
+    color: var(--textcolor);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    background-color: var(--colore2);
+}
+
+.navbar ul li i {
+    font-size: 30px;
+}
+
+.start {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    padding: 5px;
+    background-color: var(--colore1);
+    display: none;
+}
+
+.start ul li:hover {
+    background-color: var(--colore2);
+}
+
+.start h1 {
+    text-align: center;
+}
+
+.start ul {
+    display: block;
+}
+
+.start ul li {
+    padding: 12px;
+    margin: 0;
+    border-bottom: 1px solid #ffffff24
+}
+
+.start ul li:last-child {
+    border: none
+}
+
+.start ul li i {
+    font-size: 20px;
+}
+
+.start-mobile {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    max-height: calc(100vh - 50px);
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: none;
+}
+
+.right-arr {
+    float: right;
+}
+
+.icons {
+    float: left;
+}
+
+.icons li {
+    padding: 10px;
+}
+
+.toggles {
+    float: right;
+    margin-right: 15px;
+    margin-top: 5px!important;
+}
+
+.toggles li {
+    margin: 5px!important;
+    padding: 4px 5px;
+    border-radius: 50%;
+}
+
+.toggles li i {
+    font-size: 18px!important;
+}
+
+#tab {
+    display: none;
+}
+
+#tab,
+#desk {
+    margin-right: 15px;
+}
+
+#tabm:hover {
+    background-color: transparent!important;
+}
+
+.square {
+    background-color: var(--colore1);
+    width: calc(25% - 10px);
+    height: 250px;
+    margin: 5px;
+}
+
+.square:hover {
+    background-color: var(--colore2);
+}
+
+#desk-icon {
+    display: inline-flex;
+}

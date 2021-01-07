@@ -1,0 +1,30 @@
+:root {
+    --nero: #1c1c1cd9;
+    --verde: #00e489;
+    --blu: #6374ff;
+    --grigio: #505050;
+    --rosso: #ff5e5e;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.color-green {
+    color: var(--verde);
+}
+
+.color-blue {
+    color: var(--blu);
+}
+
+.color-red {
+    color: var(--rosso);
+}
+
+.row {
+    display: inline-flex;
+    width: 100%;
+}

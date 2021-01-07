@@ -1,0 +1,15 @@
+:root {
+    --colore1: #323232d9;
+    --colore2: #505050;
+    --bgcolor: black;
+    --textcolor: white;
+}
+
+#moon {
+    border: 1px solid;
+    opacity: 100%;
+}
+
+#sun {
+    opacity: 30%;
+}
