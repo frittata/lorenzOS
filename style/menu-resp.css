@@ -17,7 +17,7 @@
         padding: 16px;
         border-radius: 30px;
         text-align: center;
-        font-size: 40px;
+        font-size: 38px;
         right: 10px;
         bottom: 10px;
         transition: all 1s;
@@ -25,7 +25,7 @@
     .phone-toggles {
         position: absolute;
         border-radius: 30px;
-        right: 10px;
+        right: 13px;
         bottom: 70px;
         display: none;
     }
@@ -40,6 +40,8 @@
     #sun {
         border: none;
         margin-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
     }
     #closebutton {
         position: absolute;
