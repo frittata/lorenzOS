@@ -1,11 +1,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="style/menu.css">
+<link rel="stylesheet" href="style/menu-resp.css">
 <script src="js/script.js"></script>
+<script src="js/menu.js"></script>
 <div class="navbar">
     <div id="start-out" class="start-mobile">
         <h1>Start</h1>
         <div class="row">
-            <div class="square"></div>
+            <div class="square">
+                <div class="squarelabel">
+                    square1
+                </div>
+            </div>
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -18,27 +24,61 @@
     <div id="start-menu" class="start">
         <h1>Titolo</h1>
         <ul>
-            <li><i class="fa fa-square"></i>&nbsp&nbsp elenco1<i class="fas fa-arrow-right right-arr"></i></li>
+            <li id="dropdown1"><i class="fa fa-square"></i>&nbsp&nbsp elenco1<i class="fas fa-arrow-right right-arr"></i>
+                <div id="drop1" class="dropmain">
+                    <ul>
+                        <li>sub1</li>
+                        <li>sub1</li>
+                        <li>sub1</li>
+                    </ul>
+                </div>
+            </li>
             <li><i class="fa fa-square"></i>&nbsp&nbsp elenco2</li>
             <li><i class="fa fa-square"></i>&nbsp&nbsp elenco3</li>
-            <li><i class="fa fa-square"></i>&nbsp&nbsp elenco4<i class="fas fa-arrow-right right-arr"></i></li>
+            <li id="dropdown2"><i class="fa fa-square"></i>&nbsp&nbsp elenco4<i class="fas fa-arrow-right right-arr"></i>
+                <div id="drop2" class="dropmain">
+                    <ul>
+                        <li>sub2</li>
+                        <li>sub2</li>
+                        <li>sub2</li>
+                    </ul>
+                </div>
+            </li>
             <li><i class="fa fa-square"></i>&nbsp&nbsp elenco5</li>
             <li><i class="fa fa-square"></i>&nbsp&nbsp elenco6</li>
             <li><i class="fa fa-square"></i>&nbsp&nbsp elenco7</li>
         </ul>
     </div>
+
     <ul id="desk-icons" class="icons">
-        <li onclick="startdisplay()"><i class="fab fa-windows"></i></i>
+        <li id="start-button" onclick="startdisplay()"><i id="start-icon" class="fab fa-windows"></i></i>
         </li>
         <span id="desk-icon">
-        <li><i class="fas fa-circle-notch"></i></li>
-        <li><i class="fas fa-circle-notch"></i></li>
-        <li><i class="fas fa-circle-notch"></i></li>
+        <li id="icon1"><i class="fas fa-circle"></i></li>
+            <div id="icon1label" class="label">
+                icon1
+            </div>
+        <li id="icon2"><i class="fas fa-circle"></i></li>
+            <div id="icon2label" class="label">
+                icon2
+            </div>
+        <li id="icon3"><i class="fas fa-circle"></i></i></li>
+            <div id="icon3label" class="label">
+                icon3
+            </div>
         </span>
     </ul>
     <ul class="toggles">
         <li id="tabm" onclick="tabletmode()"><i id="desk" class="fas fa-desktop"></i><i id="tab" class="fas fa-tablet-alt"></i></li>
         <li id="moon" onclick="changeTheme('style/dark.css')"><i class="fas fa-moon"></i></li>
         <li id="sun" onclick="changeTheme('style/light.css')"><i class="fas fa-sun"></i></li>
+        <li style="border-radius: 0;" onclick="colorpalette()"><i class="fas fa-chevron-up"></i></li>
+        <div id="colpal" class="color-palette">
+            <div onclick="textcolor('#00e489')" class="color bggreen"></div>
+            <div onclick="textcolor('#ff5e5e')" class="color bgred"></div>
+            <div onclick="textcolor('#6374ff')" class="color bgblue"></div>
+            <div onclick="textcolor('black')" class="color bgblack"></div>
+            <div onclick="textcolor('white')" class="color bgwhite"></div>
+        </div>
     </ul>
 </div>

@@ -46,13 +46,14 @@ body {
     position: absolute;
     left: 0;
     bottom: 50px;
-    padding: 5px;
     background-color: var(--colore1);
     display: none;
 }
 
 .start ul li:hover {
     background-color: var(--colore2);
+    border: 1px solid;
+    border-left: none;
 }
 
 .start h1 {
@@ -66,7 +67,9 @@ body {
 .start ul li {
     padding: 12px;
     margin: 0;
-    border-bottom: 1px solid #ffffff24
+    border-bottom: 1px solid #ffffff24;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 .start ul li:last-child {
@@ -130,15 +133,152 @@ body {
 
 .square {
     background-color: var(--colore1);
-    width: calc(25% - 10px);
+    width: 100%;
     height: 250px;
     margin: 5px;
+    opacity: .8;
+    display: flex;
+    align-items: flex-end;
 }
 
 .square:hover {
     background-color: var(--colore2);
 }
 
+.squarelabel {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--colore15);
+}
+
+#start-button:hover {
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s infinite;
+}
+
+#desk-icon li:hover {
+    background: linear-gradient(90deg, #4be23d, #3ccde7, #d5d223, #d523bd);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s ease infinite;
+}
+
+.start-mobile .row .square:hover {
+    opacity: .9;
+    background: linear-gradient(73deg, rgba(255, 235, 0, 1) 0%, rgba(57, 215, 20, 1) 25%, rgba(12, 211, 212, 1) 50%, rgba(41, 64, 233, 1) 75%, rgba(252, 0, 255, 1) 100%);
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 #desk-icon {
     display: inline-flex;
+}
+
+#desk-icon li i {
+    opacity: .85;
+}
+
+#desk-icon li:hover i {
+    opacity: 1;
+}
+
+.color-palette {
+    background-color: var(--colore1);
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    display: inline-flex;
+    padding: 5px;
+    display: none;
+}
+
+.color-palette .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    margin: 6px;
+}
+
+.color-palette .color:hover {
+    transform: scale(1.2);
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.dropmain {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    margin-right: -151px;
+    border: 1px solid;
+    margin-top: -60px;
+    background-color: var(--colore1);
+}
+
+.dropmain ul li {
+    border: none!important;
+}
+
+#drop1,
+#drop2 {
+    display: none;
+}
+
+#dropdown1:hover #drop1 {
+    display: block!important;
+}
+
+#dropdown2:hover #drop2 {
+    display: block!important;
+}
+
+.label {
+    position: absolute;
+    top: -35px;
+    padding: 2px 5px;
+    background-color: var(--colore2);
+    margin: 0px;
+    color: var(--textcolor)!important;
+}
+
+#icon1label,
+#icon2label,
+#icon3label {
+    display: none;
+}
+
+#icon2label {
+    margin-left: 51px;
+}
+
+#icon3label {
+    margin-left: 102px;
+}
+
+#icon1:hover~#icon1label {
+    display: block!important;
+}
+
+#icon2:hover~#icon2label {
+    display: block!important;
+}
+
+#icon3:hover~#icon3label {
+    display: block!important;
 }
