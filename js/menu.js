@@ -40,3 +40,22 @@ function colorpalette() {
     var palette = document.getElementById("colpal");
     if (palette.style.display == "inline-flex") { palette.style.display = "none" } else { palette.style.display = "inline-flex" }
 }
+
+function phonemenu() {
+    var icons = document.getElementById("phone-i");
+    var start = document.getElementById("navtot");
+    var togg = document.getElementById("toggles-phone");
+    var close = document.getElementById("closebutton");
+    if (icons.style.display != "inline-flex") {
+        icons.style.display = "inline-flex";
+        start.style.width = "calc(100% - 60px)";
+        togg.style.display = "block";
+        close.style.display = "block";
+
+    } else {
+        icons.style.display = "none";
+        start.style.width = "auto";
+        togg.style.display = "none";
+        close.style.display = "none";
+    }
+}

@@ -23,6 +23,7 @@ body {
     height: 50px;
     background-color: var(--colore1);
     color: var(--textcolor);
+    transition: all 1s;
 }
 
 .navbar ul {
@@ -39,6 +40,10 @@ body {
 
 .navbar ul li i {
     font-size: 30px;
+}
+
+.start-phone {
+    display: none;
 }
 
 .start {

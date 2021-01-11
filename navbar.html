@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="style/menu-resp.css">
 <script src="js/script.js"></script>
 <script src="js/menu.js"></script>
-<div class="navbar">
+<div id="navtot" class="navbar">
     <div id="start-out" class="start-mobile">
         <h1>Start</h1>
         <div class="row">
@@ -62,7 +62,7 @@
             <div id="icon2label" class="label">
                 icon2
             </div>
-        <li id="icon3"><i class="fas fa-circle"></i></i></li>
+        <li id="icon3"><i class="fas fa-circle"></i></li>
             <div id="icon3label" class="label">
                 icon3
             </div>
@@ -81,4 +81,18 @@
             <div onclick="textcolor('white')" class="color bgwhite"></div>
         </div>
     </ul>
+
+    <div id="start-phone" class="start-phone">
+        <i onclick="phonemenu()" class="fab fa-windows"></i>
+        <div id="phone-i" class="phoneicons">
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+        </div>
+        <i onclick="phonemenu()" id="closebutton" class="fas fa-times"></i>
+        <div id="toggles-phone" class="phone-toggles">
+            <div id="moon" onclick="changeTheme('style/dark.css')"><i class="fas fa-moon"></i></div>
+            <div id="sun" onclick="changeTheme('style/light.css')"><i class="fas fa-sun"></i></div>
+        </div>
+    </div>
 </div>

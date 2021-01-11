@@ -1,1 +1,49 @@
-@media screen and (max-width:500px) {}
+@media screen and (max-width:500px) {
+    .start-mobile,
+    .start {
+        display: none!important;
+    }
+    .icons,
+    .toggles {
+        display: none!important;
+    }
+    .start-phone {
+        width: 100%;
+        display: flex;
+    }
+    .navbar {
+        height: auto;
+        width: auto;
+        padding: 16px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 40px;
+        right: 10px;
+        bottom: 10px;
+        transition: all 1s;
+    }
+    .phone-toggles {
+        position: absolute;
+        border-radius: 30px;
+        right: 10px;
+        bottom: 70px;
+        display: none;
+    }
+    .phoneicons {
+        display: none;
+        margin-left: 16px;
+    }
+    .phoneicons i {
+        margin: 0 4px;
+    }
+    #moon,
+    #sun {
+        border: none;
+        margin-bottom: 10px;
+    }
+    #closebutton {
+        position: absolute;
+        right: 18px;
+        display: none;
+    }
+}

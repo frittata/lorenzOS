@@ -10,7 +10,7 @@
 <?php include "navbar.html" ?>
 </head>
 <body onload="myFunction()">
-<div id="loader">
+<div style="display: none;" id="loader">
     <img id="img_load" src="img/windows-8-busy-loader-in-pure-css.gif">
 </div>
 </body>
