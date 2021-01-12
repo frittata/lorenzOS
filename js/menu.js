@@ -46,16 +46,19 @@ function phonemenu() {
     var start = document.getElementById("navtot");
     var togg = document.getElementById("toggles-phone");
     var close = document.getElementById("closebutton");
+    var app = document.getElementById("allapplications");
     if (icons.style.display != "inline-flex") {
         icons.style.display = "inline-flex";
         start.style.width = "calc(100% - 60px)";
         togg.style.display = "block";
+        app.style.display = "block";
         close.style.display = "block";
 
     } else {
         icons.style.display = "none";
         start.style.width = "auto";
         togg.style.display = "none";
+        app.style.display = "none";
         close.style.display = "none";
     }
 }

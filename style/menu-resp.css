@@ -48,4 +48,36 @@
         right: 18px;
         display: none;
     }
+    .applications {
+        display: none;
+        height: 60vh;
+        min-height: 150px;
+        position: absolute;
+        left: 5px;
+        bottom: 90px;
+        width: 75%;
+        min-width: 195px;
+        border-radius: 20px;
+        padding: 6px;
+        background: linear-gradient(var(--colore1) 25%, transparent 100%);
+    }
+    .applications ul {
+        display: block;
+        text-align: left;
+        font-size: 25px;
+    }
+    .applications ul li {
+        padding: 10px 5px;
+        border-bottom: 1px solid;
+    }
+    .applications ul li i {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .applications ul li:last-child {
+        border-bottom: none;
+    }
+    .applications h4 {
+        margin: 7px;
+    }
 }
