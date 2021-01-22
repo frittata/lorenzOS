@@ -12,9 +12,9 @@
 </head>
 <body>
 <div class="desktop">
-    <div ondblclick="win(this)" id="file" class="file">
+    <div ondblclick="win(this)" id="readme" class="file">
         <i class="fas fa-file-alt"></i>
-        <br>file1.txt
+        <br>read me.txt
     </div>
     <div ondblclick="win(this)" id="html" class="file">
         <i class="fas fa-file-code"></i>

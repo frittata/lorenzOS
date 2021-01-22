@@ -9,10 +9,11 @@
 }
 
 .file {
-    padding: 10px 15px;
+    padding: 10px 5px;
     text-align: center;
     height: fit-content;
     margin: 5px;
+    min-width: 75px;
 }
 
 .file:hover {
@@ -46,6 +47,10 @@
 .windowicons {
     float: right;
     margin-right: 10px;
+}
+
+.windowicons i {
+    margin-left: 5px;
 }
 
 .windowtitle {

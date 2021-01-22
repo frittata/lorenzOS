@@ -1,3 +1,5 @@
+var wins = 0;
+
 function win(element) {
     var id = element.id;
 
@@ -9,10 +11,13 @@ function win(element) {
     bar.className = "windowbar";
 
     var icons = document.createElement("div");
-    var icon = document.createElement("i");
-    icon.className = "fas fa-times";
-    icons.appendChild(icon);
-    icon.addEventListener("click", function() {
+    var icono = document.createElement("i");
+    var iconx = document.createElement("i");
+    iconx.className = "fas fa-times";
+    icono.className = "far fa-window-maximize";
+    icons.appendChild(icono);
+    icons.appendChild(iconx);
+    iconx.addEventListener("click", function() {
         close(id);
     });
     icons.className = "windowicons";
@@ -36,6 +41,7 @@ function win(element) {
     container.addEventListener('mousedown', function(e) {
         // mouse state set to true 
         mousedown = true;
+        container.style.zIndex = 9999;
         // subtract offset 
         x = container.offsetLeft - e.clientX;
         y = container.offsetTop - e.clientY;
@@ -45,6 +51,8 @@ function win(element) {
     container.addEventListener('mouseup', function(e) {
         // mouse state set to false 
         mousedown = false;
+        wins = wins + 1;
+        container.style.zIndex = wins;
     }, true);
 
     // element mousemove to stop 
