@@ -23,3 +23,32 @@
     font-size: 50px;
     margin-bottom: 10px;
 }
+
+.windowdiv {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: calc(50% - 200px);
+    right: calc(50% - 250px);
+    background-color: var(--colore1);
+    border: 1px solid;
+}
+
+.windowbar {
+    height: auto;
+    width: 100%;
+    background-color: var(--colore2);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 0;
+}
+
+.windowicons {
+    float: right;
+    margin-right: 10px;
+}
+
+.windowtitle {
+    float: left;
+    margin-left: 10px;
+}
