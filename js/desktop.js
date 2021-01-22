@@ -6,6 +6,8 @@ function win(element) {
     var container = document.createElement("div");
     container.className = "windowdiv";
     container.id = id + "win";
+    wins = wins + 2;
+    container.style.zIndex = wins;
 
     var bar = document.createElement("div");
     bar.className = "windowbar";
@@ -29,6 +31,7 @@ function win(element) {
     bar.appendChild(title);
     bar.appendChild(icons);
     container.appendChild(bar);
+
 
     var body = document.getElementsByTagName("body")[0];
     body.appendChild(container);
