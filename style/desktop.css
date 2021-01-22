@@ -21,7 +21,7 @@
 }
 
 .file i {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 10px;
 }
 
@@ -56,4 +56,11 @@
 .windowtitle {
     float: left;
     margin-left: 10px;
+}
+
+.windowmax {
+    top: 0;
+    left: 0;
+    width: calc(100% - 2px);
+    height: calc(100vh - 50px);
 }

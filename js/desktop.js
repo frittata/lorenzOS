@@ -22,6 +22,9 @@ function win(element) {
     iconx.addEventListener("click", function() {
         close(id);
     });
+    icono.addEventListener("click", function() {
+        maxscreen(id);
+    });
     icons.className = "windowicons";
 
     var title = document.createElement("div");
@@ -71,4 +74,10 @@ function win(element) {
 
 function close(div) {
     document.getElementById(div + "win").remove();
+}
+
+function maxscreen(div) {
+    document.getElementById(div + "win").style.left = 0;
+    document.getElementById(div + "win").style.top = 0;
+    document.getElementById(div + "win").classList.toggle("windowmax");
 }
