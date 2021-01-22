@@ -1,0 +1,25 @@
+.desktop {
+    padding: 0;
+    margin: 0;
+    width: calc(100% - 50px);
+    height: calc(100vh - 50px);
+    max-height: 100vh;
+    display: flex;
+    padding: 25px;
+}
+
+.file {
+    padding: 10px 15px;
+    text-align: center;
+    height: fit-content;
+    margin: 5px;
+}
+
+.file:hover {
+    background-color: var(--colore2);
+}
+
+.file i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
